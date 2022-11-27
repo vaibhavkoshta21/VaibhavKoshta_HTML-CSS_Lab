@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: whitesmoke;
+        }
+        video{
+            position: fixed;
+        }
+        div{
+            position: fixed;
+            top: 170px;
+            left: 500px;
+            min-width: 320px;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 40px;
+        }
+        div h1{
+            text-align: center;
+        }
+        input{
+            width: 30px;
+            min-width: 300px;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: antiquewhite;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        input:focus{
+            outline: none;
+            color: black;
+            background-color: cornsilk;
+        }
+        button{
+            margin: 20px;
+            width: 120px;
+            border-radius: 4px;
+            height: 30px;
+            color: antiquewhite;
+            font-size: 20px;
+            border: none;
+            background-color: darkolivegreen;
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="gmailForm">
+        <video autoplay muted loop>
+            <source src="D:\Microsoft VS Code\Lab-1\green_ink_01.mp4" type="video/mp4">
+        </video>
+        <div>
+            <form action="" id="google-form">
+                <h1>Create Gmail Account</h1>
+                <input type="text" title="name" placeholder="Full Name" required>
+                <br>
+                <input type="number" title="Contact_Number" min="6000000000" max="9999999999" placeholder="Contact_Number" required>
+                <br>
+                <input type="email" title="Email" placeholder="Email" required>
+                <br>
+                <button form="google-form">Reset</button>
+                <button form="google-form">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
